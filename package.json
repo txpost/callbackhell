@@ -1,0 +1,15 @@
+{
+  "name": "callbackhell",
+  "version": "1.0.0",
+  "description": "Callback hell is like...",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@trevpost",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "twit": "^1.1.18"
+  }
+}
