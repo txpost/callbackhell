@@ -34,10 +34,17 @@ getPublicTweet = function (cb) {
 // format the tweet
 formatTweet = function (botData, cb) {
 	
+	// get the tweet we found
 	var tweetText = botData.baseTweet;
 
+	// find the index of the phrase we want, allow for case sensitivity
+	var index = tweetText.toLowerCase().indexOf("hell is like");
+
+	// extract our phrase as it appears in the tweet
+	var match = tweetText.substring(index, index + 12);
+
 	// find and replace "hell is like" with "callback hell is like"
-	var ourText = tweetText.replace("hell is like", "callback hell is like");
+	var ourText = tweetText.replace(match, "callback hell is like");
 
 	var tweet = ourText;
 	botData.tweetBlock = tweet;
