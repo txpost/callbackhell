@@ -13,7 +13,7 @@ var t = new Twit({
 // get the most recent tweet that matches our query
 getPublicTweet = function (cb) {
 
-	var query = '"hell is like"';
+	var query = '"hell is like" -gay';
 
 	t.get('search/tweets', {q: query, count: 1}, function (err, data, response) {
 		if (!err) {
